@@ -101,7 +101,7 @@ class Cifar10FormatConverter(BaseFormatConverter):
         annotation_dict = read_pickle(self.data_batch_file, encoding='latin1')
         labels = annotation_dict['labels']
         images = annotation_dict['data']
-        images = images.reshape(images.shape[0], 3, 32, 32).astype(np.uint8)
+        images = images.reshape(images.shape[0], 3, 256, 256).astype(np.uint8)
         image_file = '{}_{}.png'
         # Originally dataset labels start from 0, some networks can be trained with usage 1 as label start.
         labels_offset = 0 if not self.has_background else 1

@@ -1,1 +1,9 @@
 *.pyc
+.vscode
+tools/accuracy_checker/venv
+tools/accuracy_checker/accuracy_checker.egg-info
+tools/accuracy_checker/build
+tools/accuracy_checker/lib
+tools/accuracy_checker/dist
+tools/accuracy_checker/lb_scene/dataset
+tools/accuracy_checker/lb_scene/lb-cifar
